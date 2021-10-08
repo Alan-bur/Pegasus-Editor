@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+	<gadget name="TriggerGroupEditor" type="gadget" size1024="0 550 254 768" background="ui\ui_med_gray" bevel="" a-dtype="textFontSize number Z number" titlebar="$$20487$$Trigger Group Editor" closebutton="" locktitlebarmove="">
+		<gadget name="TGEditor-list" type="list" sizerel1024="10 10 160 180" background="ui\ui_dark_gray" sunkenbevel="" showselect="" selectedcolor="255 255 255" buttonsize1024="125 15" scrollvert="" alphasort=""></gadget>
+		<gadget name="TGEditor-insbtn" type="button" sizerel1024="168 10 245 30" bevel="">$$20488$$Insert</gadget>
+		<gadget name="TGEditor-delbtn" type="button" sizerel1024="168 35 245 55" bevel="">$$18574$$Delete</gadget>
+		<gadget name="TGEditor-schalterbtn" type="button" sizerel1024="168 160 245 180" bevel="">$$20287$$Triggers
+			<command>editMode("Triggers")</command>
+		</gadget>
+		<gadget name="TGEditor-RadioButtonsLabel" type="textBox" sizerel1024="165 90 250 100" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12">$$20489$$Edit:</gadget>
+		<gadget name="TGEditor-RadioButtons" type="radioset" sizerel1024="160 105 250 145" a-dtype="textFontSize number Z number" background="UI\ui_med_gray" radiosetbuttonsize1024="125 25" radiosetdefaultbuttonindex="0">
+			<button>$$20490$$Groups</button>
+			<button>$$20287$$Triggers</button>
+		</gadget>
+		<gadget name="TGEditor-Groups" type="gadget" size1024="256 550 800 768" bevel="" background="ui\ui_med_gray" tilebackground="" titlebar="$$20490$$Groups" locktitlebarmove="">
+			<gadget name="TGEditor-Groups-nametext" type="textBox" sizerel1024="10 8 170 18" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12">$$20001$$Name:</gadget>
+			<gadget name="TGEditor-Groups-name" type="textField" sizerel1024="10 25 170 50 " textcolor="0 0 0"></gadget>
+			<gadget name="TGEditor-Groups-list" type="list" titlebar="$$20287$$Triggers" sizerel1024="250 10 510 180" textcolor="0 0 0" background="ui\ui_dark_gray" scrollvert="" locktitlebarmove="" sunkenbevel="" alphasort="" fieldrequireenter=""></gadget>
+		</gadget>
+		<gadget name="TGEditor-Triggers" type="gadget" size1024="256 550 800 768" bevel="" background="ui\ui_med_gray" tilebackground="" titlebar="$$20287$$Triggers" locktitlebarmove="" hidden="">
+			<gadget name="TGEditor-Triggers-nametext" type="textBox" sizerel1024="10 10 150 20" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12">$$20491$$Current:</gadget>
+			<gadget name="TGEditor-Triggers-list1" type="list" sizerel1024="13 34 188 180" background="ui\ui_dark_gray" sunkenbevel="" showselect="" selectedcolor="255 255 255" buttonsize1024="125 15" scrollvert="" alphasort=""></gadget>
+			<gadget name="TGEditor-Triggers-delbtn" type="button" tooltiptext="$$20055$$Remove" foreground="icons\icon triggerright" sizerel1024="202 70 262 90" bevel=""></gadget>
+			<gadget name="TGEditor-Triggers-insbtn" type="button" tooltiptext="$$20488$$Add" foreground="icons\icon triggerleft" sizerel1024="202 95 262 115" bevel=""></gadget>
+			<gadget name="TGEditor-Triggers-group2" type="textField" sizerel1024="278 07 510 30" textcolor="0 0 0" bevel="" dropdowndistance="132" fieldreadonly="">$$20492$$Group:
+				<dropdown>1</dropdown>
+			</gadget>
+			<gadget name="TGEditor-Triggers-list2" type="list" sizerel1024="278 34 510 180" background="ui\ui_dark_gray" sunkenbevel="" showselect="" selectedcolor="255 255 255" buttonsize1024="125 15" scrollvert="" alphasort=""></gadget>
+		</gadget>
+	</gadget>
+</layout>
