@@ -1,0 +1,3 @@
+Chongli libera sua fúria flamejante sobre os inimigos através do Poder Divino Inferno. Esse Poder Divino da Era Mítica reduzirá às cinzas prédios inimigos e incendiará quaisquer unidades localizadas dentro de seu raio de ação. O Inferno não será muito seletivo a partir do momento em que for lançado, então fique atento a unidades aliadas que estejam na área-alvo. 
+
+Para lançar um Inferno, clique com o botão esquerdo no Poder Divino Inferno no topo da tela, e então clique com o botão esquerdo em qualquer local do mapa. A área-alvo deve estar dentro de seu <link="topic:line of sight">campo de visão</link>.

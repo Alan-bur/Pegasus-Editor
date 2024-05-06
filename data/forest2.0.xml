@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Made with ❤ by @alanbur_ (instagram)-->
+
+<foresttypes>
+
+	<forest name="Autumn Oak" iconname="editor-ui\palette\forest\autumn oak.tga" floor="ForestFloorOak">
+		<protounit>Oak Autumn</protounit>
+	</forest>
+
+	<forest name="Bamboo" iconname="editor-ui\palette\forest\bamboo.tga" floor="ForestFloorOak">
+		<protounit>Bamboo Tree</protounit>
+	</forest>
+
+	<forest name="Dead" iconname="editor-ui\palette\forest\dead.tga" floor="ForestFloorDeadPine">
+		<protounit>Pine Dead</protounit>
+	</forest>
+
+	<forest name="Jungle" iconname="editor-ui\palette\forest\jungle.tga" floor="ForestFloorJungle">
+		<protounit>Jungle Tree</protounit>
+		<protounit>Jungle Palm</protounit>
+	</forest>
+
+	<forest name="Oak" iconname="editor-ui\palette\forest\oak.tga" floor="ForestFloorOak">
+		<protounit>Oak Tree</protounit>
+	</forest>
+
+	<forest name="Palm" iconname="editor-ui\palette\forest\palm.tga" floor="ForestFloorPalm">
+		<protounit>Palm</protounit>
+	</forest>
+
+	<forest name="Pine" iconname="editor-ui\palette\forest\pine.tga" floor="ForestFloorPine">
+		<protounit>Pine</protounit>
+	</forest>
+
+	<forest name="Snow Pine" iconname="editor-ui\palette\forest\snow-pine.tga" floor="ForestFloorPineSnow">
+		<protounit>Pine Snow</protounit>
+	</forest>
+
+	<forest name="Oak Mix" iconname="editor-ui\palette\forest\oak-mix.tga" floor="ForestFloorPine">
+		<protounit>Pine</protounit>
+		<protounit>Oak Tree</protounit>
+	</forest>
+	<forest name="Pine Mix" iconname="editor-ui\palette\forest\pine-mix.tga" floor="ForestFloorPineSnow">
+		<protounit>Pine</protounit>
+		<protounit>Pine Snow</protounit>
+	</forest>
+
+	<forest name="Palm Mix" iconname="editor-ui\palette\forest\palm-mix.tga" floor="ForestFloorPalm">
+		<protounit>Palm</protounit>
+		<protounit>Oak Tree</protounit>
+	</forest>
+	<forest name="Savannah" iconname="editor-ui\palette\forest\savannah.tga" floor="ForestFloorSavannah">
+		<protounit>Savannah Tree</protounit>
+	</forest>
+	<forest name="Tundra" iconname="editor-ui\palette\forest\tundra.tga" floor="ForestFloorTundra">
+		<protounit>Tundra Tree</protounit>
+	</forest>
+	<forest name="Marsh" iconname="editor-ui\palette\forest\marsh.tga" floor="ForestFloorMarsh">
+		<protounit>Marsh Tree</protounit>
+	</forest>
+
+	<forest name="Jungle Mix" iconname="editor-ui\palette\forest\jungle-mix.tga" floor="ForestFloorJungle">
+		<protounit>Jungle Tree</protounit>
+		<protounit>Jungle Palm</protounit>
+		<protounit>Bamboo Tree</protounit>
+	</forest>
+
+	<forest name="B. Marsh" iconname="editor-ui\palette\forest\bamboo-marsh.tga" floor="ForestFloorMarsh">
+		<protounit>Bamboo Tree</protounit>
+	</forest>
+	<forest name="B. Jungle" iconname="editor-ui\palette\forest\bamboo-jungle.tga" floor="ForestFloorJungle">
+		<protounit>Bamboo Tree</protounit>
+	</forest>
+	<forest name="Plain" iconname="editor-ui\palette\forest\plain.tga" floor="ForestFloorOak">
+		<protounit>Jungle Tree</protounit>
+	</forest>
+	<forest name="Plain Mix" iconname="editor-ui\palette\forest\plain-mix.tga" floor="ForestFloorOak">
+		<protounit>Bamboo Tree</protounit>
+		<protounit>Jungle Tree</protounit>
+	</forest>
+
+</foresttypes>

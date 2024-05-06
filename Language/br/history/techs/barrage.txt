@@ -1,0 +1,3 @@
+Chang'e manda seu marido Houyi enviar uma saraivada de flechas para proteger seus seguidores. A Saraivada pode ser direcionada a qualquer local, mas é mais efetiva em grandes grupos de unidades. Prédios também são afetados, mas numa proporção bem menor.
+
+Para invocar uma Saraivada de Flechas, clique com o botão esquerdo no ícone de Saraivada, e então clique com o botão esquerdo em qualquer lugar dentro de seu  <link="topic:line of sight">campo de visão</link>.

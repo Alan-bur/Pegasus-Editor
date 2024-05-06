@@ -1,0 +1,1 @@
+The Garden is a economic building unique to the Chinese civilisation. Aside from its pleasing visual, the Garden's purpose is to generate resources based on the player's choice but with the caveat that only one resource can be generated at a time. While the player can build more than one garden, they will all generate the same resource without the option to set them individually.

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Made with ❤ by @alanbur_ (instagram)-->
+
+<cliffs>
+
+	<cliff name="CliffA" iconname="editor-ui\palette\rock\cliffa" top="CliffA" side="CliffA" edge="CliffGreekB"></cliff>
+
+	<cliff name="Egyptian" iconname="editor-ui\palette\rock\egyptian" top="sandA" side="CliffEgyptianA" edge="sanddirt50"></cliff>
+
+	<cliff name="Egyptian Rock" iconname="editor-ui\palette\rock\egyptian-rock" top="CliffEgyptianA" side="CliffEgyptianA" edge="sanddirt50"></cliff>
+
+	<cliff name="Norse" iconname="editor-ui\palette\rock\norse" top="snowB" side="CliffNorseA" edge="CliffNorseB"></cliff>
+
+	<cliff name="Norse Rock" iconname="editor-ui\palette\rock\norse-rock" top="CliffNorseA" side="CliffNorseA" edge="CliffNorseB"></cliff>
+
+	<cliff name="Greek" iconname="editor-ui\palette\rock\greek" top="grassdirt25" side="CliffGreekA" edge="grassdirt50"></cliff>
+
+	<cliff name="Greek Rock" iconname="editor-ui\palette\rock\greek-rock" top="CliffGreekA" side="CliffGreekA" edge="CliffGreekB"></cliff>
+
+	<cliff name="Hades" iconname="editor-ui\palette\rock\hades" top="Hades9" side="HadesCliff" edge="hadesbuildable2"></cliff>
+
+	<cliff name="Jungle" iconname="editor-ui\palette\rock\jungle" top="JungleA" side="CliffJungleA" edge="CliffJungleB"></cliff>
+
+	<cliff name="Jungle Rock" iconname="editor-ui\palette\rock\jungle-rock" top="CliffJungleA" side="CliffJungleA" edge="CliffJungleB"></cliff>
+
+	<cliff name="Plain" iconname="editor-ui\palette\rock\plain" top="PlainA" side="CliffPlainA" edge="CliffPlainB"></cliff>
+
+	<cliff name="Plain Rock" iconname="editor-ui\palette\rock\plain-rock" top="CliffPlainA" side="CliffPlainA" edge="CliffPlainB"></cliff>
+</cliffs>

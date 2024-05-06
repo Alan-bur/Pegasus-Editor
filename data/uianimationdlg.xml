@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Made with ❤ by @alanburcet (instagram)-->
+
+<!-- Bug discovered, if you delete a gadget here, you wont be able to change a tag sound.-->
+<layout>
+	<gadget name="animgadget" type="animationgadget" size1024="10 10 380 485" closebutton="" titlebar="$$24275$$Animation Control" backgroundcolor="62 62 62">
+
+		<gadget name="ActionText" type="textBox" sizerel1024="20 20 70 40" textfont="Arial nodrop" textfontsize="12" textcolor="255 255 255">Action</gadget>
+			<gadget name="animdlg-animlist" type="textField" sizerel1024="20 38 150 58"  tooltiptext="$$24252$$The animation selection." showselect="" selectedcolor="0 0 255" buttonsize1024="180 30" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" scrollvert="">
+				<dropdown></dropdown>
+			</gadget>
+		<gadget name="VariationText" type="textBox" sizerel1024="20 70 100 90" textfont="Arial nodrop" textfontsize="12" textcolor="255 255 255">Variation</gadget>
+			<gadget name="animdlg-versionlist" type="textField" sizerel1024="20 88 150 108" tooltiptext="$$24233$$variation of this animation.  (not used with path override)" showselect="" selectedcolor="0 0 255" allowdoubleclick="" buttonsize1024="180 30" a-dtype="textFontSize number Z number" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" scrollvert="">
+				<dropdown></dropdown>
+			</gadget>
+		<gadget name="DummyText" type="textBox" sizerel1024="20 120 150 150" textfont="Arial nodrop" textfontsize="12" textcolor="255 255 255">Dummy</gadget>
+			<gadget name="animdlg-dummyselect" sizerel1024="20 138 150 158" type="textField" tooltiptext="$$24237$$Select the dummy object to show." showselect="" selectedcolor="0 0 255" allowdoubleclick="" buttonsize1024="180 30" a-dtype="textFontSize number Z number" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" scrollvert="">
+				<dropdown></dropdown>
+			</gadget>
+		<gadget name="AnimPathText" type="textBox" sizerel1024="20 170 150 200" textfont="Arial nodrop" textfontsize="12" textcolor="255 255 255">Animation Path</gadget>
+			<gadget name="animdlg-pathselect" type="textField" sizerel1024="20 188 150 208" droptooltiptext="$$24238$$Override the animation path for fine grain control of the render." showselect="" selectedcolor="0 0 255" buttonsize1024="180 30" a-dtype="textFontSize number Z number" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="8" scrollvert="">
+				<dropdown></dropdown>
+			</gadget>
+
+		<gadget name="AnimPlayerText" type="textBox" sizerel1024="190 20 290 40" textfont="Arial nodrop" textfontsize="12" textcolor="255 255 255">Animation Player</gadget>
+		<gadget name="animdlg-statustext" type="textBox" textcolor="255 255 200" textfont="Arial nodrop" textfontsize="8" sizerel1024="188 40 370 110">$$22340$$Status</gadget>
+		<gadget name="animdlg-progressslider" type="animationslider" sizerel1024="190 110 350 130"></gadget>
+		<gadget name="animdlg-beginbutton" type="button" size1024="210 170 230 190" foreground="editor-ui\windows\anim-viewer\start.tga"></gadget>
+		<gadget name="animdlg-stepbackbutton" type="button" size1024="240 170 260 190" foreground="editor-ui\windows\anim-viewer\back.tga"></gadget>
+		<gadget name="animdlg-playbutton" type="button" size1024="270 170 290 190" foreground="editor-ui\windows\anim-viewer\arrow-right.tga"></gadget>
+		<gadget name="animdlg-stepforwardbutton" type="button" size1024="300 170 320 190" foreground="editor-ui\windows\anim-viewer\forward.tga"></gadget>
+		<gadget name="animdlg-endbutton" type="button" size1024="330 170 350 190" foreground="editor-ui\windows\anim-viewer\finish.tga"></gadget>
+
+		<gadget name="ToolsText" type="textBox" sizerel1024="190 170 290 200" textfont="Arial nodrop" textfontsize="12" textcolor="255 255 255">Tools</gadget>
+		<gadget name="animdlg-reloadbutton" type="button" tooltiptext="$$24235$$Load the animation file for this model from the disk." textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" sizerel1024="190 190 240 220">$$24214$$Reload</gadget>
+		<gadget name="animdlg-zoombutton" type="button" tooltiptext="$$24236$$Nifty zoom feature." textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" sizerel1024="250 190 300 220">$$24215$$Zoom</gadget>
+
+		<gadget name="TagsText" type="textBox" sizerel1024="20 230 150 260" textfont="Arial nodrop" textfontsize="12" textcolor="255 255 255">Tags</gadget>
+		<gadget name="animdlg-taglist" type="list" tooltiptext="Tags of this animation." textfontsize="8" textfont="Arial nodrop" textcolor="255 255 255" size1024="30 290 180 440" buttonsize1024="200 25" backgroundcolor="80 80 80" showselect="" selectedcolor="119 250 255" scrollvert=""></gadget>
+
+		<gadget name="animdlg-attacktagdlg" type="gadget" size1024="230 290 440 440">
+		<gadget name="animdlg-attacktagdlg-sendcheck" type="checkButton" tooltiptext="$$24240$$Determines if the action gets a message." textcolor="255 255 255" textfontsize="8" textfont="Arial nodrop" size1024="195 330 350 350">Send To Action</gadget>
+		</gadget>
+		<gadget name="animdlg-soundsettagdlg" type="gadget" size1024="230 290 350 440">
+		<gadget name="SoundText" type="textBox" size1024="200 263 320 293" textfont="Arial nodrop" textfontsize="12" textcolor="255 255 255">Sound</gadget>
+			<gadget name="animdlg-soundsettagdlg-soundsetselect" type="textField" tooltiptext="$$24241$$Pick the SoundSet to play when this tag fires." showselect="" selectedcolor="0 0 255" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="8" size1024="200 290 350 310" scrollvert="">
+				<dropdown></dropdown>
+			</gadget>
+			<gadget name="animdlg-soundsettagdlg-sendcheck" type="checkButton" textcolor="255 255 255" textfontsize="8" textfont="Arial nodrop" tooltiptext="$$24239$$Determines if the action gets a message." size1024="195 325 350 345">Send To Action</gadget>
+			<gadget name="animdlg-soundsettagdlg-visiblecheck" type="checkButton" textcolor="255 255 255" textfontsize="8" textfont="Arial nodrop"  tooltiptext="$$24242$$Check this to make the unit silent when off screen." size1024="195 355 350 375">Check Visible</gadget>
+			<gadget name="animdlg-soundsettagdlg-ownercheck" type="checkButton" textcolor="255 255 255" textfontsize="8" textfont="Arial nodrop" tooltiptext="$$24243$$Check this to make the unit silent if you don't own it." size1024="195 385 350 405">Check Owner</gadget>
+			<gadget name="animdlg-soundsettagdlg-loopcheck" type="checkButton" textcolor="255 255 255" textfontsize="8" textfont="Arial nodrop" tooltiptext="$$24244$$Check this to make the sound loop." size1024="195 415 350 435">Loop</gadget>
+		</gadget>
+		<gadget name="animdlg-soundtagdlg" type="gadget" size1024="230 290 440 440">
+			<gadget name="animdlg-soundtagdlg-soundselect" type="textField" displayname="Sound" columnorder="" showselect="" selectedcolor="0 0 255" allowdoubleclick="" buttonsize1024="180 30" a-dtype="textFontSize number Z number" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12" sizerel1024="10 10 200 30" background="ui\ui_med_gray" scrollvert="">$$24227$$Sound:</gadget>
+			<gadget name="animdlg-soundtagdlg-sendcheck" type="checkButton" tooltiptext="$$24239$$Determines if the action gets a message." sizerel1024="10 35 200 55">$$24222$$SendToAction</gadget>
+			<gadget name="animdlg-soundtagdlg-visiblecheck" type="checkButton" tooltiptext="$$24242$$Check this to make the unit silent when off screen." sizerel1024="10 60 200 80">$$24224$$CheckVisible</gadget>
+			<gadget name="animdlg-soundtagdlg-ownercheck" type="checkButton" tooltiptext="$$24243$$Check this to make the unit silent if you don't own it." sizerel1024="10 85 200 105">$$24225$$CheckOwner</gadget>
+		</gadget>
+
+
+
+			<gadget type="button" name="animdlg-addbutton" tooltiptext="$$24245$$Add a tag." textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" sizerel1024="20 450 100 480">$$18573$$Add</gadget>
+			<gadget type="button" name="animdlg-removebutton" tooltiptext="$$24246$$Remove a tag." textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" sizerel1024="110 450 190 480">$$20055$$Remove</gadget>
+			<gadget type="button" name="animdlg-tagbutton" tooltiptext="$$24247$$Set the tag position to the current animation position." textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" sizerel1024="250 450 330 480">$$24228$$Tag</gadget>
+			<gadget type="button" name="animdlg-minusbutton" tooltiptext="$$24248$$Decrement the current tag position." textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" sizerel1024="250 490 270 510">-</gadget>
+			<gadget type="button" name="animdlg-plusbutton" tooltiptext="$$24249$$Increment the current tag position." textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" sizerel1024="280 490 300 510">+</gadget>
+			<gadget type="button" name="animdlg-savebutton" tooltiptext="$$24250$$Save all tag information for this model." textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" sizerel1024="20 490 100 520">$$24229$$Save Tags</gadget>
+			<gadget type="button" name="animdlg-propagatebutton" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" tooltiptext="$$24251$$Propagate the tag settings for this visual to all similar visuals in this animation." sizerel1024="340 450 420 480">$$24231$$Propagate</gadget>
+			<gadget type="dialog" name="animdlg-tagtypedlg" sizerel1024="100 200 320 350" closebutton="" titlebar="Tag Type" background="ui\ui_dark_gray" tilebackground="">
+				<gadget name="animdlg-tagtypedlg-typeradios" type="radioset" sizerel1024="10 10 110 85" a-dtype="textFontSize number Z number" background="UI\ui_dark_gray" radiosetbuttonsize1024="125 25" radiosetdefaultbuttonindex="0">
+					<button>$$24229$$Attack</button>
+					<button>$$22384$$Sound</button>
+					<button>$$24232$$SoundSet</button>
+				</gadget>
+				<gadget type="button" name="animdlg-tagtypedlg-okbutton" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" sizerel1024="130 90 200 120">$$18465$$OK</gadget>
+				<gadget type="button" name="animdlg-tagtypedlg-cancelbutton" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" sizerel1024="50 90 120 120">$$18466$$Cancel</gadget>
+			</gadget>
+
+		<!--Not Used-->
+		<gadget name="animdlg-pathtext" type="textBox" textcolor="255 255 255" textfont="Arial nodrop" hidden="" textfontsize="6" sizerel1024="10 300 400 340">$$24221$$Animation Path</gadget>
+		<gadget name="animdlg-releasebutton" type="button" tooltiptext="$$24234$$Release the animation lock." textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12" hidden="" sizerel1024="190 190 240 22">$$24213$$Release</gadget>
+
+		</gadget>
+</layout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+	<gadget name="trEditor" type="gadget" size1024="0 520 254 768" background="ui\ui_med_gray" closebutton="" bevel="" a-dtype="textFontSize number Z number" titlebar="$$20517$$Trigger Editor" locktitlebarmove="">
+		<gadget name="trEdit-Trigger-group" type="textField" sizerel1024="10 07 240 30" textcolor="0 0 0" bevel="" dropdowndistance="132" dropdownvisitems="5">$$20518$$Group:
+			<dropdown>1</dropdown>
+		</gadget>
+		<gadget name="trEdit-Trigger-list" type="list" sizerel1024="10 34 160 180" background="ui\ui_dark_gray" sunkenbevel="" showselect="" selectedcolor="255 255 255" buttonsize1024="125 15" scrollvert="" alphasort="" listactivateonalphajump=""></gadget>
+		<gadget name="trEdit-Trigger-insbtn" type="button" sizerel1024="168 40 245 60" bevel="">$$20488$$Insert</gadget>
+		<gadget name="trEdit-Trigger-copybtn" type="button" sizerel1024="210 65 245 85" bevel="">$$23829$$Copy</gadget>
+		<gadget name="trEdit-Trigger-delbtn" type="button" sizerel1024="168 65 203 85" bevel="">$$23831$$Del</gadget>
+		<gadget name="trEdit-Trigger-CopyPasteOpen" type="button" tooltiptext="Trigger Save And Copy Mode" bevel="" sizerel1024="10 195 160 215">$$20336$$Copy Paste
+			<command>gadgetToggle("SchalterKop")</command>
+		</gadget>
+		<gadget name="trEdit-CondEffPanel-closebtn" type="button" sizerel1024="165 195 245 215" bevel="">$$18457$$Close
+			<command>editMode("none")</command>
+		</gadget>
+		<gadget name="trEdit-Trigger-RadioButtonsLabel" type="textBox" sizerel1024="168 90 245 100" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12">$$20489$$Edit:</gadget>
+		<gadget name="trEdit-Trigger-RadioButtons" type="radioset" sizerel1024="160 105 240 145" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12" background="UI\ui_med_gray" radiosetbuttonsize1024="80 25" radiosetdefaultbuttonindex="0">
+			<button>$$20287$$Triggers</button>
+			<button>$$18264$$Conditions</button>
+			<button>$$18265$$Effects</button>
+		</gadget>
+		<gadget name="trEdit-Triggers" type="gadget" size1024="256 520 800 768" bevel="" background="ui\ui_med_gray" tilebackground="" titlebar="$$20287$$Triggers" locktitlebarmove="">
+			<gadget type="textBox" name="trEdit-Trigger-nametext" sizerel1024="10 5 170 15" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12">$$20001$$Name:</gadget>
+			<gadget type="textField" name="trEdit-Trigger-name" tooltiptext="$$22092$$" sizerel1024="10 25 170 50 " textcolor="0 0 150"></gadget>
+			<gadget type="checkButton" name="trEdit-Trigger-activebtn" sizerel1024="10 60 150 80" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">$$20519$$Active</gadget>
+			<gadget type="checkButton" name="trEdit-Trigger-loopbtn" sizerel1024="10 80 150 100" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">$$19007$$Loop</gadget>
+			<gadget type="checkButton" name="trEdit-Trigger-runimmediatelybtn" sizerel1024="10 100 170 120" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">$$20522$$RunImmediately</gadget>
+			<gadget type="textBox" name="trEdit-Trigger-prioritytext" sizerel1024="10 125 170 145" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12">$$20520$$Priority:</gadget>
+			<gadget type="slider" name="trEdit-Trigger-priority" sizerel1024="10 145 170 165" textcolor="0 0 0"></gadget>
+			<gadget type="textBox" name="trEdit-Trigger-Lowtext" sizerel1024="10 165 70 185" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">$$18579$$Low</gadget>
+			<gadget type="textBox" name="trEdit-Trigger-Normaltext" sizerel1024="70 165 120 185" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">$$18294$$Normal</gadget>
+			<gadget type="textBox" name="trEdit-Trigger-Hightext" sizerel1024="120 165 170 185" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">$$18578$$High</gadget>
+			<gadget name="trEdit-Trigger-armyedbtn" type="button" sizerel1024="180 195 270 215" bevel="">$$20289$$Army Editor
+				<command>gadgetToggle("ATriggerArmyGadget")</command>
+			</gadget>
+			<gadget name="trEdit-Trigger-groupedbtn" type="button" sizerel1024="280 195 370 215" bevel="">$$20288$$Group Editor
+				<command>editMode("TrigGroups")</command>
+			</gadget>
+			<gadget name="trEdit-Trigger-animviewbtn" type="button" sizerel1024="390 195 530 215" bevel="">$$24009$$View Animations
+				<command>gadgetToggle("animgadget")</command>
+			</gadget>
+			<gadget type="list" name="trEdit-Condition-list" titlebar="$$18264$$Conditions" sizerel1024="180 10 350 180" textcolor="0 0 0" background="ui\ui_dark_gray" scrollvert="" locktitlebarmove="" sunkenbevel="" alphasort=""></gadget>
+			<gadget type="list" name="trEdit-Effect-list" titlebar="$$18265$$Effects" sizerel1024="360 10 530 180" textcolor="0 0 0" background="ui\ui_dark_gray" scrollvert="" locktitlebarmove="" sunkenbevel="" alphasort=""></gadget>
+		</gadget>
+		<gadget name="trEdit-CondEffPanel" type="gadget" size1024="256 520 800 768" bevel="" background="ui\ui_med_gray" tilebackground="" titlebar="$$18264$$Conditions" locktitlebarmove="" hidden="">
+			<gadget name="trEdit-CondEffPanel-name" type="textField" sizerel1024="10 10 160 35" textcolor="0 0 150"></gadget>
+			<gadget name="trEdit-CondEffPanel-list" type="list" sizerel1024="10 40 160 180" background="ui\ui_dark_gray" sunkenbevel="" showselect="" selectedcolor="255 255 255" scrollvert=""></gadget>
+			<gadget name="trEdit-CondEffPanel-insbtn" type="button" sizerel1024="168 10 225 30" bevel="">$$20488$$Insert</gadget>
+			<gadget name="trEdit-CondEffPanel-delbtn" type="button" sizerel1024="168 35 225 55" bevel="">$$18574$$Delete</gadget>
+			<gadget name="trEdit-CondEffPanel-copybtn" type="button" sizerel1024="168 60 225 80" bevel="">$$23829$$Copy</gadget>
+			<gadget name="trEdit-CondEffPanel-musicbtn" type="button" tooltiptext="$$22398$$Music Filename" sizerel1024="168 100 188 120" bevel="" foreground="icons\music">
+				<command>gadgetToggle("playMusike")</command>
+			</gadget>
+			<gadget name="trEdit-CondEffPanel-musicstopbtn" type="button" tooltiptext="$$22401$$Music Stop" sizerel1024="205 100 225 120" bevel="" foreground="icons\musicout">
+				<command>musicStop</command>
+			</gadget>
+			<gadget name="trEdit-CondEffPanel-notbox" type="checkbutton" sizerel1024="168 130 225 150" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">$$23901$$NOT</gadget>
+			<gadget name="trEdit-CondEffPanel-orbox" type="checkbutton" sizerel1024="168 155 225 175" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">$$23902$$OR</gadget>
+			<gadget name="trEdit-CondEffPanel-objbtn" type="button" sizerel1024="10 195 100 215" bevel="">$$20104$$Objectives
+				<command>gadgetReal("ObjectiveEditor")</command>
+			</gadget>
+			<gadget name="trEdit-CondEffPanel-animbtn" type="button" sizerel1024="105 195 195 215" bevel="">$$22360$$Animation
+				<command>gadgetToggle("txtBox")</command>
+			</gadget>
+			<gadget name="trEdit-CondEffPanel-animbtn" type="button" sizerel1024="200 195 290 215" bevel="">$$22346$$Gadget
+				<command>gadgetToggle("tgvUI")</command>
+			</gadget>
+			<gadget name="trEdit-CondEffPanel-brubtn" type="button" sizerel1024="295 195 385 215" bevel="">$$22386$$Portrait
+				<command>gadgetToggle("portPict")</command>
+			</gadget>
+			<gadget name="trEdit-Trigger-animviewbtn" type="button" sizerel1024="390 195 530 215" bevel="">$$24009$$View Animations
+				<command>gadgetToggle("animgadget")</command>
+			</gadget>
+			<gadget type="textField" name="trEdit-CondEffPanel-type" sizerel1024="235 10 530 33" textcolor="0 0 0" bevel="" dropdowndistance="132" fieldreadonly="">$$20347$$Type:
+				<dropdown>1</dropdown>
+			</gadget>
+			<gadget type="gadget" name="trEdit-CondEffPanel-custom" size1024="490 575 790 720"></gadget>
+		</gadget>
+	</gadget>
+	<gadget name="SchalterKop" type="gadget" size1024="0 370 256 520" hidden="" closeonesc="" moveable="" closebutton="" titlebar="$$20336$$Copy Paste" background="ui\ui_med_gray">
+		<gadget name="exportText" type="button" bevel="" sizerel1024="25 15 215 35" textcenterhoriz="" tooltiptext="Save All Triggers As" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0">Save All Triggers As
+			<command>uiExportTriggers</command>
+		</gadget>
+		<gadget name="importText" type="button" bevel="" sizerel1024="220 15 240 35" textcenterhoriz="" tooltiptext="Open Trigger Load Browser" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0">L
+			<command>uiImportTriggers</command>
+		</gadget>
+		<gadget name="kopText" type="button" bevel="" sizerel1024="25 40 215 60" tooltiptext="Copy All Triggers To Clipboard" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0">Copy All Triggers
+			<command>uiSaveTriggers</command>
+		</gadget>
+		<gadget type="button" name="triggerHinweis" sizerel1024="222 40 238 56" tooltiptext="$$40134$$" z="2" foreground="ui\yellowdot">
+			<command>uiTopicDetailHelp("trigger")</command>
+		</gadget>
+		<gadget name="deleteText" type="button" bevel="" sizerel1024="220 65 240 80" textcenterhoriz="" tooltiptext="Clear All Triggers" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="200 0 0">CL
+			<command>uiSaveTriggers("backup") uiLoadTriggers("-") uiMessageBox("The deleted triggers was saved as BACKUP.TRG. To reload read the NE-Help file!")</command>
+		</gadget>
+		<gadget name="ladenText" type="button" bevel="" sizerel1024="25 65 215 85" tooltiptext="Load All Triggers From Clipboard" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0">Paste All Triggers
+			<command>uiLoadTriggers</command>
+		</gadget>
+		<gadget name="instalText" type="button" bevel="" sizerel1024="25 90 40 110" textcenterhoriz="" tooltiptext="$$20253$$Save As" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0">A
+			<command>uiSaveTriggers("A")</command>
+		</gadget>
+		<gadget name="instalText2" type="button" bevel="" sizerel1024="45 90 60 110" textcenterhoriz="" tooltiptext="$$18443$$Load" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 180">A
+			<command>uiLoadTriggers("A")</command>
+		</gadget>
+		<gadget name="instalText3" type="button" bevel="" sizerel1024="70 90 85 110" textcenterhoriz="" tooltiptext="$$20253$$Save As" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0">B
+			<command>uiSaveTriggers("B")</command>
+		</gadget>
+		<gadget name="instalText4" type="button" bevel="" sizerel1024="90 90 105 110" textcenterhoriz="" tooltiptext="$$18443$$Load" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 180">B
+			<command>uiLoadTriggers("B")</command>
+		</gadget>
+		<gadget name="instalText5" type="button" bevel="" sizerel1024="115 90 130 110" textcenterhoriz="" tooltiptext="$$20253$$Save As" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0">C
+			<command>uiSaveTriggers("C")</command>
+		</gadget>
+		<gadget name="instalText6" type="button" bevel="" sizerel1024="135 90 150 110" textcenterhoriz="" tooltiptext="$$18443$$Load" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 180">C
+			<command>uiLoadTriggers("C")</command>
+		</gadget>
+		<gadget name="instalText7" type="button" bevel="" sizerel1024="160 90 175 110" textcenterhoriz="" tooltiptext="$$20253$$Save As" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0">D
+			<command>uiSaveTriggers("D")</command>
+		</gadget>
+		<gadget name="instalText8" type="button" bevel="" sizerel1024="180 90 195 110" textcenterhoriz="" tooltiptext="$$18443$$Load" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 180">D
+			<command>uiLoadTriggers("D")</command>
+		</gadget>
+		<gadget name="instalText9" type="button" bevel="" sizerel1024="205 90 220 110" textcenterhoriz="" tooltiptext="$$20253$$Save As" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0">E
+			<command>uiSaveTriggers("E")</command>
+		</gadget>
+		<gadget name="instalText0" type="button" bevel="" sizerel1024="225 90 240 110" textcenterhoriz="" tooltiptext="$$18443$$Load" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 180">E
+			<command>uiLoadTriggers("E")</command>
+		</gadget>
+	</gadget>
+</layout>
