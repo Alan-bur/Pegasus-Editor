@@ -1,1 +1,0 @@
-O Jardim é um prédio econômico único aos Chineses. Apesar de seu visual agradável, o propósito de um Jardim é gerar recursos baseado na escolha do jogador, mas com o aviso de que apenas um recurso pode ser gerado por vez. Apesar de o jogador poder construir mais de um Jardim, todos eles gerarão o mesmo recurso, sem a opção de defini-lo individualmente para cada Jardim. 

@@ -1,3 +1,0 @@
-O Poder Divino Zhong Kui envia raízes através da crosta da Terra para danificar prédios inimigos. Prédios localizados dentro da área de efeito serão então cercados por raízes possuídas que continuarão danificando os prédios até que eles sejam destruídos. Quanto mais prédios estiverem na área, maior será o efeito do Poder Divino.
-
-Para usar o Poder Divino de Enraizar em seus inimigos, selecione o ícone de Enraizar, e então clique com o botão esquerdo próximo aos prédios inimigos que você quer danificar. Os prédios inimigos aos quais você deseja direcionar o Poder Divino devem estar dentro de seu <link="topic:line of sight">campo de visão</link>.
