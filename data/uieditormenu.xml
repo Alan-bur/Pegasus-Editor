@@ -6,6 +6,7 @@
 	<!--Focus Background-->
 	<gadget name="focus-bg" background="editor-ui\windows\focus-bg" type="gadget" hidden="" z="0" size1024="-1000 -1000 2000 1000"></gadget>
 
+
 	<!--Indicators-->
 	<gadget name="Population-icon" background="editor-ui\counters\population.tga" type="gadget" tooltiptext="$$19088$$All Population" size1024="1070 551 1090 569"></gadget>
 	<gadget name="Population-Counter" type="textBox" tooltiptext="$$19088$$All Population" textcolor="255 255 255" textfont="Arial nodrop" textfontsize="12" size1024="1095 552 1234 570">{pop}</gadget>
@@ -77,9 +78,10 @@
 				<submenu title="Default output">showDefaultOutput()</submenu>
 				<submenu title="XS Debugger" accelerator="A">gadgetToggle("XSDebugger")</submenu>
 				<submenu title="AI Debug Info" accelerator="A">gadgetReal("neueIcon") gadgetUnreal("ScenarioAIDebugInfo") gadgetReal("ScenarioAIDebugInfo2") gadgetFlash("ScenarioAIDebugInfo2") AIDebugInfoToggle</submenu>
+				<submenu title="Console" accelerator="A">gadgetReal("Console"), consoleAlpha 0.5, uiDumpAIIUnitHotKeyMappings()</submenu>
 			</submenu>
 			<submenu title="" separator=""></submenu>
-			<submenu title="$$20259$$Return to Main Menu" accelerator="R">gadgetUnreal("DebugMenu") gadgetUnreal("QuickPaint") configSetInt("limitPitch",45) configSetInt("minZoom",5) saveScenario("~last") leaveGame</submenu>
+			<submenu title="$$20259$$Return to Main Menu" accelerator="R">gadgetUnreal("Console") gadgetUnreal("DebugMenu") gadgetUnreal("QuickPaint") configSetInt("limitPitch",45) configSetInt("minZoom",5) saveScenario("~last") leaveGame</submenu>
 			<submenu title="$$18449$$Exit to Windows" accelerator="E">saveScenario("~last") exit</submenu>
 		</submenu>
 	</gadget>
@@ -343,7 +345,7 @@
 	<!--Object Preview-->
 	<gadget name="BrushFunctionsPlaceObject" type="gadget" size1024="800 347 1054 548" refreshonreal="" hidden="">
 		<gadget name="BrushFunctionsPlaceObjectPicture" type="meshButton" tooltiptext="Click to see object details." background="editor-ui\windows\window-bg"  refreshonreal="" size1024="800 250 1054 520">
-			<command>uiShowAIDebugInfoKBUnit(1)</command>
+			<command>uiShowAIDebugInfoKBUnit(1) uiLookAtSelection()</command>
 			<gadget name="BrushFunctionsPlaceObjectName" type="textBox" textcenterhoriz="" textcentervert="" textcolor="255 255 255" textfont="Arial nodrop" textfontsize="12" size1024="800 480 1054 780"> 
 			</gadget>
 		</gadget>
@@ -1537,8 +1539,9 @@
 		<gadget name="MapElevationSpaceAvailableBelow" type="textBox" textfont="Arial nodrop" textcolor="255 255 255" textfontsize="12" size1024="557 262 627 282"></gadget>
 		<gadget name="MapElevationUpButton" type="button" textfont="Arial nodrop" textfontsize="12" size1024="362 294 482 319">$$20357$$Move Map Up</gadget>
 		<gadget name="MapElevationDownButton" type="button" textfont="Arial nodrop" textfontsize="12" size1024="507 294 627 319">$$20358$$Move Map Down</gadget>
-		<gadget name="MapElevationApplyButton" type="button" textfont="Arial nodrop" textfontsize="12" size1024="530 395 600 420">$$20359$$Apply</gadget>
-
+		<gadget name="test" type="button" textfont="Arial nodrop" textfontsize="12" size1024="507 294 627 319">test
+		<command>configSetInt("minZoom",1000)</command>
+		</gadget>
 		<gadget name="MapElevationSquashCheckBox" type="checkButton" textfont="Arial nodrop" textcolor="255 255 255" textfontsize="12" size1024="357 337 587 357">$$20360$$Allow Movement Past Ceiling</gadget>
 	</gadget>
 
